@@ -26,3 +26,9 @@ jobs:
         run: nproc
       - name: Check Kernel info
         run: uname -r
+      - name: Check OS info
+        run: cat /etc/os-release
+      - name: Check Disk info
+        run: df -h
+      - name: Check Memory info
+        run: free -h
